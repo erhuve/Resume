@@ -1,0 +1,231 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Raymond Luo} \\ \vspace{1pt}
+    \small 425-394-2960 $|$ \href{mailto:ray.luo@nyu.edu}{\underline{ray.luo@nyu.edu}} $|$ 
+    \href{https://linkedin.com/in/~ray}{\underline{linkedin.com/in/\url{~ray}}} $|$
+    \href{https://github.com/erhuve}{\underline{github.com/erhuve}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{New York, NY}
+      {BA in Computer Science \& Media Studies, Minor in Mathematics; Magna Cum Laude (3.92)}{Sep. 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Spectrum Labs}{Jan. 2023 -- May 2023}
+      {Part-time Software Engineer Intern, Guardian Moderation Queue}{Remote, NY}
+      \resumeItemListStart
+        \resumeItem{Implemented \textbf{e2e testing} with \textbf{Playwright}, saving minutes on manual testing, and integrated it into \textbf{CircleCI} for \textbf{CI/CD }with \textbf{TypeScript, Docker}}
+        \resumeItem{Integrated with \textbf{B2B} software along with feature flags for tracking usage analytics using \textbf{TypeScript}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Meta (Facebook)}{May 2022 -- Aug. 2022}
+      {Software Engineer Intern, Dating Ranking ENG}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented new candidate retrieval funnel for developer efficiency and scalability, also \textbf{reducing latency by 35\%}, using \textbf{Hack}}
+        \resumeItem{Enabled match quality improvements and experimentation opportunities by injecting new features into ranking with \textbf{Hack} and \textbf{C++}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Spectrum Labs}{Jan. 2022 -- May 2022}
+      {Software Engineer Intern, Guardian Moderation Queue}{Remote, NY}
+      \resumeItemListStart
+        \resumeItem{Implemented role-based access control handled in \textbf{TypeScript} and \textbf{Vue} frontend and \textbf{Scala} backend with \textbf{gRPC}}
+        \resumeItem{Improved internal efficiency and scalability by developing two features which \textbf{reduced turn-around-time by 98\% (10 minutes $\rightarrow$ 10 seconds)}}
+        \resumeItem{Implemented quality-of-life features which \textbf{saved users 10 minutes} per moderation session}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Facebook}{June 2021 -- Aug. 2021}
+      {Software Engineer Intern, Cloud Gaming Infra}{Remote, NY}
+      \resumeItemListStart
+        \resumeItem{Created video-based analysis tool which \textbf{drove engagement up 10\%} in third party developer's game, using \textbf{Hack}, \textbf{JavaScript}, and \textbf{React}}
+        \resumeItem{Optimized clustering algorithm to avoid memory issues and \textbf{process 12x the volume of data}}
+        \resumeItem{Experimented on computer vision script to \textbf{increase sample size of datasets by 20\%}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NYU Courant Institute of Mathematical Sciences}{Sep. 2020 -- Jan. 2021}
+      {Data Structures Tutor}{Remote, NY}
+      \resumeItemListStart
+        \resumeItem{Tutored students 10 hours/week in Data Structures (Java), assisting with homework \& test preparation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Social27 Inc.}{May 2020 -- Aug. 2020}
+      {Data \& AI Intern}{Remote, WA}
+      \resumeItemListStart
+        \resumeItem{Implemented latent feature matrix factorization ML model to address data sparsity in recommender system with \textbf{LightFM}}
+        \resumeItem{Created client data reports by writing \textbf{Python} script to scrape, clean, and visualize livestream metrics}
+        \resumeItem{Owned coordination between three companies to produce 3000+ attendee virtual event as PM+CSM}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://erhuve.github.io/doggle_wasm}{Doggle: A Wasm Game}} $|$ \emph{Rust, Wasm, HTML, CSS, JavaScript}}{June 2022}
+          \resumeItemListStart
+            \resumeItem{Created Wordle-style dog-themed browser game with images and dynamic word lengths}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/erhuve/flowershop}{Flower Shop: A Discord Ticketing Bot}} $|$ \emph{Python}}{February 2022}
+          \resumeItemListStart
+            \resumeItem{Created a Discord bot with friendly interface and UX for users to open tickets to speak with moderators}
+            \resumeItem{Deployed bot to Heroku to run 24/7 for 5k+ member NYU Discord}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Scala, Rust, Java, Hack/PHP, C, SQL} \\
+     \textbf{Frameworks}{: Flask, TensorFlow, Selenium, Nuxt} \\
+     \textbf{Frontend}{: HTML, CSS, JavaScript, TypeScript, React, Vue} \\
+     \textbf{Developer Tools}{: git, mercurial, bash, Docker, CircleCI, \LaTeX}
+     
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
