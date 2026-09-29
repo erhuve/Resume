@@ -96,7 +96,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -127,10 +127,14 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Zo Computer Company}{July 2025 -- Present}
-      {Founding Engineer}{Brooklyn, NY}
+      {Zo Computer}{July 2025 -- Present}
+      {Founding Engineer (Employee \#1)}{Brooklyn, NY}
       \resumeItemListStart
-        \resumeItem{Your intelligent cloud computer - \href{https://ray.zo.space/blog/just-do-things}{\underline{ray.zo.space/blog/just-do-things}}}
+        \resumeItem{Owned integrations and skills end to end for a platform serving \textbf{tens of thousands of users}; built native integrations and replaced unreliable Pipedream MCP calls with custom API-backed agent tools.}
+        \resumeItem{Designed and built Zo Space, an AI website/API builder with privacy controls, versioning, and error handling.}
+        \resumeItem{Redesigned onboarding flow, improving \textbf{week-one retention by ${\sim}$12 percentage points}.}
+        \resumeItem{Owned signup and provisioning for \textbf{thousands of monthly signups}, including session-token signing and refresh for new hosts; built abuse prevention to mitigate \textbf{${\sim}$\$500k/month in projected abuse costs}.}
+        \resumeItem{Expanded subscription and AI-usage billing handling \textbf{five-figure monthly volume}; implemented credit purchases, auto-recharge, and spending controls.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -202,15 +206,6 @@
     %     \resumeItem{Tutored students 10 hours/week in Data Structures (Java), assisting with homework \& test preparation}
     %   \resumeItemListEnd
 
-    \resumeSubheading
-      {Social27 Inc.}{May 2020 -- Aug. 2020}
-      {Data \& AI Intern}{Remote, WA}
-      \resumeItemListStart
-        \resumeItem{Implemented latent feature matrix factorization model to address sparsity in recommender system with \textbf{LightFM}}
-        % \resumeItem{Created client data reports by writing \textbf{Python} script to scrape, clean, and visualize livestream metrics}
-        \resumeItem{Owned coordination between three companies to produce 3000+ attendee virtual event as PM+CSM}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
@@ -218,39 +213,22 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {New York University}{New York, NY}
-    {BA in Computer Science \& Media Studies, Minor in Mathematics; Magna Cum Laude (3.92)}{Sep. 2019 -- May 2023}
+    {BA in Computer Science \& Media Studies, Minor in Mathematics; Magna Cum Laude (\textbf{3.92})}{Sep. 2019 -- May 2023}
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{\href{https://erhuve.github.io/doggle_wasm}{Doggle: A Wasm Game}} $|$ \emph{Rust, Wasm, HTML, CSS, JavaScript}}{June 2022}
-          \resumeItemListStart
-            \resumeItem{Created Wordle-style dog-themed browser game with images and dynamic word lengths}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/erhuve/flowershop}{Flower Shop: A Discord Ticketing Bot}} $|$ \emph{Python}}{February 2022}
-          \resumeItemListStart
-            \resumeItem{Created a Discord bot with friendly interface and UX for users to open tickets to speak with moderators}
-            \resumeItem{Deployed bot to Heroku to run 24/7 for 5k+ member NYU Discord}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+
 
 
 
 %
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, SQL, Scala, Rust, Java, Hack/PHP, C} \\
-     \textbf{Frameworks}{: FastAPI, Flask, TensorFlow, Selenium, Nuxt} \\
-     \textbf{Frontend}{: HTML, CSS, JavaScript, TypeScript, React, Vue} \\
-     \textbf{Developer Tools}{: git, mercurial, bash, Docker, CircleCI, \LaTeX}
-     
-    }}
- \end{itemize}
+\section{Projects \& Potpourri}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
+    \resumeItem{\textbf{Social27 --- Data \& AI Intern (Summer 2020):} Implemented a \textbf{LightFM} recommendation model to address sparse data; coordinated three companies to deliver a \textbf{3,000+ attendee} virtual event.}
+    \resumeItem{\textbf{\href{https://erhuve.github.io/doggle_wasm}{Doggle} (2022, Rust/Wasm):} Created a dog-themed Wordle-style browser game with images and dynamic word lengths.}
+    \resumeItem{\textbf{\href{https://github.com/erhuve/flowershop}{Flower Shop} (2022, Python):} Built and operated a 24/7 Discord ticketing bot for my \textbf{5k+ member NYU community}, giving members a friendly way to contact moderators.}
+    \resumeItem{\textbf{You Had To Be There (2026, TypeScript):} Created a location-based photo app inspired by reading \textit{The Timeless Way of Building}; contributing a fresh photo unlocks a place's shared timeline.}
+  \end{itemize}
 
 
 %-------------------------------------------
